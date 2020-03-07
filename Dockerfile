@@ -21,7 +21,7 @@ RUN rm -f /lib/systemd/system/multi-user.target.wants/* \
     /lib/systemd/system/systemd-update-utmp*
 
 RUN cd /root && wget https://raw.githubusercontent.com/deividgdt/dockerpicentreon/master/centreon_central.sh
-RUN chmod +x centreon_central.sh
+RUN chmod +x /root/centreon_central.sh
 
 
 VOLUME [ "/sys/fs/cgroup" ]
