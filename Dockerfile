@@ -5,8 +5,10 @@ ENV LC_ALL C
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN echo "deb http://ftp.es.debian.org/debian/ buster main contrib non-free" >> /etc/apt/sources.list
-RUN apt-get update \
-    && apt-get install -y systemd git gpg wget curl \
+
+RUN apt-get update
+RUN apt-get install -y apt-utils
+RUN apt-get install -y systemd git gpg wget curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
