@@ -4,7 +4,7 @@ ENV container docker
 ENV LC_ALL C
 ENV DEBIAN_FRONTEND noninteractive
 
-RNN echo "deb http://ftp.es.debian.org/debian/ buster main contrib non-free" >> /etc/apt/sources.list
+RUN echo "deb http://ftp.es.debian.org/debian/ buster main contrib non-free" >> /etc/apt/sources.list
 RUN apt-get update \
     && apt-get install -y systemd git gpg wget curl \
     && apt-get clean \
