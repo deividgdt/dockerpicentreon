@@ -8,9 +8,7 @@ RUN echo "deb http://ftp.es.debian.org/debian/ buster main contrib non-free" >> 
 
 RUN apt-get update
 RUN apt-get install -y apt-utils
-RUN apt-get install -y systemd git gpg wget curl \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get install -y systemd git gpg wget curl
 
 RUN rm -f /lib/systemd/system/multi-user.target.wants/* \
     /etc/systemd/system/*.wants/* \
@@ -22,7 +20,6 @@ RUN rm -f /lib/systemd/system/multi-user.target.wants/* \
 
 RUN cd /root && wget https://raw.githubusercontent.com/deividgdt/dockerpicentreon/master/centreon_central.sh
 RUN chmod +x /root/centreon_central.sh
-
 
 VOLUME [ "/sys/fs/cgroup" ]
 
