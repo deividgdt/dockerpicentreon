@@ -1,6 +1,6 @@
 #!/bin/bash
 # Centreon 19.10 + engine install script for Raspian Buster
-# v 1.45
+# kermith72 version: v 1.45
 # 19/02/2020
 # Thanks to kermith72
 # Forked from: https://github.com/kermith72/auto_install
@@ -8,7 +8,7 @@
 export DEBIAN_FRONTEND=noninteractive
 ### Variables
 ## Versions
-VERSION_BASH="v 1.0"
+VERSION_BASH="v 1.1"
 
 ## Centreon Versions
 CLIB_VER="19.10.0"
@@ -451,8 +451,9 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes ntp \
 # Cleanup to prevent space full on /var
 apt-get clean >> ${INSTALL_LOG}
 
-# Create the directorio /var/run if does not exists
-if [ ! -d /var/run ]; then mkdir -p /var/run; fi
+# Create the directory /var/run/php and /run/php/ just in case
+if [ ! -d /var/run/php ]; then mkdir -p /var/run/php; fi
+if [ ! -d /run/php ]; then mkdir -p /run/php; fi
 
 a2enmod proxy_fcgi setenvif proxy rewrite >> ${INSTALL_LOG}
 a2enconf php7.3-fpm >> ${INSTALL_LOG}
