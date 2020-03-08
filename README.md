@@ -28,3 +28,6 @@ A Centreon Container for Docker running in a Raspberry PI
 - Execute the script
 
   `/root/centreon_central.sh`
+  
+## More info
+Sigue todos los [pasos de la instalación en mi blog](https://deividsdocs.wordpress.com/2020/03/08/instalando-centreon-en-docker-sobre-una-raspberry-pi-3/)
