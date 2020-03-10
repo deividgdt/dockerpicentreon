@@ -26,6 +26,9 @@ A Centreon Container for Docker running in a Raspberry PI
 - Execute the script
 
   `/root/centreon_central.sh`
+- Go to the following URL an finish the configuration:
+
+  `http://raspberrypi_ip:8080/centreon` 
   
 ## More info
 Sigue todos los [pasos de la instalación en mi blog](https://deividsdocs.wordpress.com/2020/03/08/instalando-centreon-en-docker-sobre-una-raspberry-pi-3/)
