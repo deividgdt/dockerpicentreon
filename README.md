@@ -19,7 +19,7 @@ A Centreon Container for Docker running in a Raspberry PI
   `docker build -t centreon:0.0 .`
 - Run the container
 
-  `docker run -d --name centreon --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro centreon:0.0`
+  `docker run -d --name centreon --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 centreon:0.0`
 - Execute an interactive bash shell
 
   `docker exec -it centreon bash` 
