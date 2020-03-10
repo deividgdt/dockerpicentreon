@@ -4,9 +4,7 @@ A Centreon Container for Docker running in a Raspberry PI
 ![](https://deividsdocs.files.wordpress.com/2020/03/maxresdefault-1.jpg)
 
 ## Installation
-- Download the docker file in your host
 
-  `# wget https://raw.githubusercontent.com/deividgdt/dockerpicentreon/master/Dockerfile`
 - Create a docker directory
 
   `mkdir -p /root/docker`
