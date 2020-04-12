@@ -33,5 +33,5 @@ A Centreon Container for Docker running in a Raspberry PI
 ## More info
 Sigue todos los [pasos de la instalación en mi blog](https://deividsdocs.wordpress.com/2020/03/08/instalando-centreon-en-docker-sobre-una-raspberry-pi-3/)
 
-## Buy me a coffee
+Buy me a coffee
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U01LTQB)
